@@ -6,7 +6,7 @@ A simple command line app that converts Anki cards to Logseq flashcards.
 
 ### Export your anki cards
 
-- Go to File/Export
+- Go to File>Export
 - Chose export format as "Cards in Plain Text"
 - Select your Anki Deck to Export
 - Save the file in a folder in your computer
@@ -20,4 +20,3 @@ A simple command line app that converts Anki cards to Logseq flashcards.
   ```
 - Enter the name of the file you want to convert to the command line and click `Enter`
 - Look for the new converted `.md` file in the same folder.
-# anki-to-logseq
