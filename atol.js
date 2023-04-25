@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require("node:fs");
 
 const readline = require("readline").createInterface({
   input: process.stdin,
@@ -32,7 +32,7 @@ const formatText = (text) => {
 
 // read file and format it
 const convertAndSave = (fileToConvert) => {
-  fs.readFile(`./${fileToConvert}.txt`, "utf8", async (err, data) => {
+  fs.readFile(`./${fileToConvert}.txt`, "utf8", (err, data) => {
     if (err) throw err;
     let formattedText = formatText(data);
     fs.writeFile(`${fileToConvert}-converted.md`, formattedText, (err) => {
